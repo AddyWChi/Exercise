@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FibonacciNumber", "FibonacciNumber", "{83E6CC6B-CE96-4081-9909-8DA08363B985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciNumber", "FibonacciNumber\FibonacciNumber.csproj", "{19AF4AE8-3410-4270-BF74-255164939871}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19AF4AE8-3410-4270-BF74-255164939871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AF4AE8-3410-4270-BF74-255164939871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AF4AE8-3410-4270-BF74-255164939871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AF4AE8-3410-4270-BF74-255164939871}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19AF4AE8-3410-4270-BF74-255164939871} = {83E6CC6B-CE96-4081-9909-8DA08363B985}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2B18978-504A-462E-B4C9-3F9E00981F02}
