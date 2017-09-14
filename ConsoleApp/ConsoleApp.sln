@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FibonacciNumber", "Fibonacc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciNumber", "FibonacciNumber\FibonacciNumber.csproj", "{19AF4AE8-3410-4270-BF74-255164939871}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrintDiamond", "PrintDiamond", "{D37DD2D9-03A1-42CF-A1CD-9E9107CD39BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintDiamond", "PrintDiamond\PrintDiamond.csproj", "{5E6BA4F7-03BF-4C41-B4F7-0DAA8CECFE95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{19AF4AE8-3410-4270-BF74-255164939871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19AF4AE8-3410-4270-BF74-255164939871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19AF4AE8-3410-4270-BF74-255164939871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6BA4F7-03BF-4C41-B4F7-0DAA8CECFE95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6BA4F7-03BF-4C41-B4F7-0DAA8CECFE95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6BA4F7-03BF-4C41-B4F7-0DAA8CECFE95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6BA4F7-03BF-4C41-B4F7-0DAA8CECFE95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{19AF4AE8-3410-4270-BF74-255164939871} = {83E6CC6B-CE96-4081-9909-8DA08363B985}
+		{5E6BA4F7-03BF-4C41-B4F7-0DAA8CECFE95} = {D37DD2D9-03A1-42CF-A1CD-9E9107CD39BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2B18978-504A-462E-B4C9-3F9E00981F02}
