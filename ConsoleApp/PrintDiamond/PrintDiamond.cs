@@ -17,6 +17,9 @@ namespace ThirtyMinutes.ConsoleApp
         }
     }
 
+    /// <summary>
+    /// Print out the diamond shape in console window.
+    /// </summary>
     public class PrintDiamond
     {
         public PrintDiamond()
