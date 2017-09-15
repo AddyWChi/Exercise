@@ -14,12 +14,22 @@ namespace ThirtyMinutes.ConsoleApp
             FindHighFrequencyNumber num = new FindHighFrequencyNumber();
 
             list = new int[] { 1, 1, 2, 3, 4, 5 };
-            Console.WriteLine("Expect 1.  Got: " + num.GetNumber(list));
+            Console.WriteLine("Expect 1 (Array).  Got: " + num.GetNumberA(list));
             Console.WriteLine("Expect 1 (Linq).  Got: " + num.GetNumberQ(list));
+            Console.WriteLine("Expect 1 (50%).  Got: " + num.GetNumber(list));
+            Console.WriteLine("==========");
 
             list = new int[] { 7, 7, 7, 1, 1, 2, 3, 4, 5 };
-            Console.WriteLine("Expect 7.  Got: " + num.GetNumber(list));
+            Console.WriteLine("Expect 7 (Array).  Got: " + num.GetNumberA(list));
             Console.WriteLine("Expect 7 (Linq).  Got: " + num.GetNumberQ(list));
+            Console.WriteLine("Expect 7 (50%).  Got: " + num.GetNumber(list));
+            Console.WriteLine("==========");
+
+            list = new int[] { 7, 7, 7, 1, 1, 7, 2, 3, 2, 4, 1, 5, 7 };
+            Console.WriteLine("Expect 7 (Array).  Got: " + num.GetNumberA(list));
+            Console.WriteLine("Expect 7 (Linq).  Got: " + num.GetNumberQ(list));
+            Console.WriteLine("Expect 7 (50%).  Got: " + num.GetNumber(list));
+            Console.WriteLine("==========");
 
             return;
         }
@@ -37,11 +47,11 @@ namespace ThirtyMinutes.ConsoleApp
         }
 
         /// <summary>
-        /// Get the number that appear most.
+        /// Get the number that appear most by going through array.
         /// </summary>
         /// <param name="list">A list of unsorted number.</param>
-        /// <returns>A number that appears more than 50% of time.</returns>
-        public int? GetNumber(params int[] list)
+        /// <returns>A number that appears most.</returns>
+        public int? GetNumberA(params int[] list)
         {
             if (list.Length == 0)
             {
@@ -81,7 +91,7 @@ namespace ThirtyMinutes.ConsoleApp
         /// Get the number that appear most using Linq.
         /// </summary>
         /// <param name="list">A list of unsorted number.</param>
-        /// <returns>A number that appears more than 50% of time.</returns>
+        /// <returns>A number that appears most.</returns>
         public int? GetNumberQ(params int[] list)
         {
             if (list.Length == 0)
@@ -94,6 +104,53 @@ namespace ThirtyMinutes.ConsoleApp
                         .First().Key;
 
             return num;
+        }
+
+        /// <summary>
+        /// Get the number that appear most, assuming it appears more than 50% of time.
+        /// </summary>
+        /// <param name="list">A list of unsorted number.</param>
+        /// <returns>A number that appears more than 50% of time.</returns>
+        public int? GetNumber(params int[] list)
+        {
+            if (list.Length == 0)
+            {
+                return null;
+            }
+
+            Dictionary<int, int> log = new Dictionary<int, int>();
+
+            int? number = null;
+            int count = 0;
+            for (int i = 0; i < list.Length; i++)
+            {
+                if ((i % 2) == 0)
+                {
+                    continue;
+                }
+
+                int n = list[i];
+                if (log.ContainsKey(n) == false)
+                {
+                    log.Add(n, 1);
+                    if (count < 1)
+                    {
+                        number = n;
+                        count = 1;
+                    }
+                }
+                else
+                {
+                    log[n] = log[n] + 1;
+                    if (log[n] > count)
+                    {
+                        number = n;
+                        count = log[n];
+                    }
+                }
+            }
+
+            return number;
         }
     }
 }
