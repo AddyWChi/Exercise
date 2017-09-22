@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FindHighFrequencyNumber", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindHighFrequencyNumber", "FindHighFrequencyNumber\FindHighFrequencyNumber.csproj", "{521A5B34-A495-4E82-A0F1-1691C896ABC3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DetectCircularLinkList", "DetectCircularLinkList", "{0A7EF4D7-5A3D-413F-B3CC-54ACA072193B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectCircularLinkList", "DetectCircularLinkList\DetectCircularLinkList.csproj", "{AB40A395-CD9D-49DD-9330-9AA6AFAA42F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{521A5B34-A495-4E82-A0F1-1691C896ABC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{521A5B34-A495-4E82-A0F1-1691C896ABC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{521A5B34-A495-4E82-A0F1-1691C896ABC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB40A395-CD9D-49DD-9330-9AA6AFAA42F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB40A395-CD9D-49DD-9330-9AA6AFAA42F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB40A395-CD9D-49DD-9330-9AA6AFAA42F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB40A395-CD9D-49DD-9330-9AA6AFAA42F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{19AF4AE8-3410-4270-BF74-255164939871} = {83E6CC6B-CE96-4081-9909-8DA08363B985}
 		{5E6BA4F7-03BF-4C41-B4F7-0DAA8CECFE95} = {D37DD2D9-03A1-42CF-A1CD-9E9107CD39BE}
 		{521A5B34-A495-4E82-A0F1-1691C896ABC3} = {823D4625-01E6-4E9F-A25B-BC526C7BEA84}
+		{AB40A395-CD9D-49DD-9330-9AA6AFAA42F7} = {0A7EF4D7-5A3D-413F-B3CC-54ACA072193B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2B18978-504A-462E-B4C9-3F9E00981F02}
