@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThirtyMinutes.ConsoleApp
 {
-    class RunMain
+    class RunMain_PrintDiamond
     {
         static void Main(string[] args)
         {

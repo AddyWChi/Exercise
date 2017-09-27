@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Detect Circular Link List")]
+[assembly: AssemblyProduct("Merge Sorted Linked List")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ab40a395-cd9d-49dd-9330-9aa6afaa42f7")]
+[assembly: Guid("97bac72d-6900-4adc-bb98-3dfbb7833f88")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2017.0918.1.1")]
-[assembly: AssemblyFileVersion("2017.0918.1.1")]
+[assembly: AssemblyVersion("2017.0925.1.1")]
+[assembly: AssemblyFileVersion("2017.0925.1.1")]
